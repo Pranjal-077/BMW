@@ -77,11 +77,17 @@ function modelAnimation() {
       gsap.to(this.querySelector(".bluelayer"),{
         height: "100%",
       });
+      gsap.to(this.querySelector(".listelem"),{
+        color: white,
+      });
     });
   
     el.addEventListener("mouseleave", function(dets) {
       gsap.to(this.querySelector(".bluelayer"),{
         height: "0%",
+      });
+      gsap.to(this.querySelector(".listelem"),{
+        color: black,
       });
     })
   })
